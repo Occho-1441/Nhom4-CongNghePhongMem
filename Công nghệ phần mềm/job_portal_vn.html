@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng Việc Làm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x400') no-repeat center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .hero input, .hero button {
+            padding: 10px;
+            margin: 5px;
+        }
+        .content {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            padding: 15px;
+            background: white;
+            border: 1px solid #ddd;
+            margin-right: 20px;
+        }
+        .jobs {
+            width: 75%;
+        }
+        .job-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .job-card h3 {
+            margin: 0;
+        }
+        .job-card button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #198754;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .job-card button:hover {
+            background: #145c32;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0d6efd;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><strong>Cổng Việc Làm</strong></div>
+        <nav>
+            <a href="#trangchu">Trang chủ</a>
+            <a href="#vieclam">Việc làm</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#contact">Liên hệ</a>
+            <a href="#login">Đăng nhập</a>
+            <a href="#signup">Đăng ký</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="trangchu">
+        <h1>Tìm công việc mơ ước của bạn ngay hôm nay</h1>
+        <input type="text" placeholder="Nhập chức danh hoặc công ty">
+        <input type="text" placeholder="Địa điểm">
+        <button>Tìm việc làm</button>
+    </section>
+
+    <section class="content" id="vieclam">
+        <div class="sidebar">
+            <h3>Bộ lọc tìm kiếm</h3>
+            <p><strong>Loại công việc</strong></p>
+            <label><input type="checkbox"> Toàn thời gian</label><br>
+            <label><input type="checkbox"> Bán thời gian</label><br>
+            <label><input type="checkbox"> Thực tập</label><br>
+
+            <p><strong>Mức lương</strong></p>
+            <input type="range" min="0" max="100000" step="1000">
+        </div>
+
+        <div class="jobs">
+            <h2>Danh sách việc làm</h2>
+
+            <div class="job-card">
+                <h3>Nhân viên Kinh doanh</h3>
+                <p>Công ty ABC - Hà Nội</p>
+                <p>Lương: 12.000.000 - 15.000.000 VNĐ</p>
+                <button>Chi tiết</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Kỹ sư Phần mềm</h3>
+                <p>Công ty XYZ - TP.HCM</p>
+                <p>Lương: 18.000.000 - 25.000.000 VNĐ</p>
+                <button>Chi tiết</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Thực tập sinh Marketing</h3>
+                <p>Công ty 123 - Đà Nẵng</p>
+                <p>Lương: Thỏa thuận</p>
+                <button>Chi tiết</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 - Website hỗ trợ tìm kiếm việc làm
+    </footer>
+</body>
+</html>
